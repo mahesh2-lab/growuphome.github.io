@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3498db;
+            color: #fff;height: 100vh;margin-bottom:200vh;
+        }
+
+        
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1vw;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .profile img {
+            width:6vw;
+            height: 40px;
+            border-radius: 10%;
+            margin-right: 0.5vw;
+        }
+
+        .logout {
+            text-decoration: none;
+            color: #fff;
+            padding: 1vw 2vw;
+            border:-1vw solid #fff;
+            border-radius: -3vw;
+        }
+
+        .logout:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        
+        #menu {
+            margin-top:1vw;margin-left:2px;
+            background: #2c3e50;width: 70vw;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content:space-around
+        }
+
+        #menu ul li {
+            position: relative; display: flex;
+        }#menu ul li:hover{
+    background: #3abc1a;}
+
+
+        #menu ul li a {
+            color:#fff;
+  text-decoration: none;
+  font-size:1.5vw;
+  
+  line-height:30px;
+  width: 8vw;
+  padding:  -1vw;
+  display: flex;
+        }
+
+        #menu ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #34495e;
+            min-width:0.5vw;
+        }
+
+        #menu ul ul li {
+            width: 100%;
+        }
+
+        #menu ul li:hover > ul {
+            display: block;
+        } @media(min-width:180px){form {
+  background-color:  #fff;
+  width: 30vw;
+  height:33px;
+  border-radius:4vw;
+  display:flex;
+  align-self: auto;
+  margin-left: 0.5%;
+}}
+
+input {
+  all: unset;
+  font:1.5vw system-ui;
+  color: black;
+  height: 100%;
+  width: 100%;
+  padding: 0.5vw 0.5vw;position: right/bottom;
+}
+
+::placeholder {
+  color: black;
+  opacity: 0.7; 
+}
+
+svg {
+  color: black;
+  fill: currentColor;
+  width: 10px;
+ position: right/bottom;
+  padding:20px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width:30px;
+ color: black;position: right;float: left;}
+
+      
+        
+
+  #internships{background-color: #2c3e50;}
+  #INTERNSHIPS{
+    padding-bottom: 100px;
+  }
+.INTERNSHIPS > ul{
+  background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+   
+}
+#INTERNSHIPS ul{
+  list-style: none;background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+  position: relative;
+  margin: 0;
+  padding: 0;
+  float: left;border-bottom:3px #3498DB;
+}
+#INTERNSHIPS ul a{
+  color:#fff;
+  text-decoration: none;
+  font-size:1.3vw;
+  font-weight: bold;
+  line-height:4vw;
+  width: 14.7vw;
+  padding:  0 3vw;
+  display: block;border-left:0.3vw  solid lightgreen;border-bottom:1px solid blueviolet;border-radius: 0;
+}#INTERNSHIPS ul ul li::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 0.5vw;
+    height: 0.5vw;
+    border-left: 0.35vw solid white;border-bottom: 0.35vw solid white;transform: rotate(45deg);
+    right: 1vw;top: 50%;pointer-events: none;rotate: 180deg;
+}
+#INTERNSHIPS ul li{
+  float: left;
+page-orientation: 9vw;
+  margin: -4;
+  padding: 0;
+  position: relative;font-size: medium;border-bottom:3px #3498DB;
+}
+
+#INTERNSHIPS ul li:hover{
+  background: lightgreen;
+
+}
+#INTERNSHIPS ul ul{
+  position:absolute;
+  background: green;
+  top: 100%;
+  left: 0;width: 21vw;
+  display: none;font-size:1vw;border-bottom:3px #3498DB;
+}
+
+#INTERNSHIPS ul ul li{
+  float: none;
+  width:21vw;border-bottom:3px #3498DB;
+ 
+}#INTERNSHIPS ul ul ul::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid white;border-bottom: 2px solid white;transform: rotate(45deg);
+    right: 10px;top: 50%;pointer-events: none;rotate: 180deg;display: none;
+}#INTERNSHIPS ul ul li:hover{
+  border-left:3px solid lightgreen;}
+
+  #INTERNSHIPS ul ul ul{
+    top: 0.5vw;
+    width: 21vw;
+    left:100%;padding: 0%;border-bottom:3px #3498DB;
+
+  }
+#INTERNSHIPS ul li:hover > ul{
+  background-image:linear-gradient(to right, #33001b, #ff0084); 
+;display:block;   }
+.courses{background-color: aqua;}
+   .dropbtn {
+     background-color: #3498DB;
+     color: white;
+     padding: 4vw;
+     font-size: 4vw;
+     border: none;
+     cursor: pointer;
+   }
+   
+   .dropbtn:hover, .dropbtn:focus {
+     background-color: #2980B9;
+   }
+   
+   .dropdown {
+     position: relative;
+     display: inline-block;
+   }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f1f1f1;
+     min-width: 8vw;
+     overflow: auto;
+     box-shadow: 0vw 8vw 16vw 0vw rgba(0,0,0,0.2);
+     z-index: 1;
+   }
+   
+   .dropdown-content a {
+     color: black;
+     padding: 4vw 6vw;
+     text-decoration: none;
+     display: block;
+   }
+   
+   .dropdown a:hover {background-color: #ddd;}
+   
+   .show {display: block;}
+   </style><style>
+        body {
+            
+            margin: 0;
+            padding: 0;
+           
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="profile">
+        <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" alt="Profile Picture">
+        <span>Welcome !</span>
+    </div>
+    <button id="logout" class="logout">Logout</button>
+</div>
+
+<div id="menu">
+    <ul>
+        <li><a href="https://grow2024.000webhostapp.com">HOME</a></li>
+        <li>
+            <a href="https://grow2024.000webhostapp.com/about">ABOUT US</a>
+            <ul>
+                
+               
+            </ul>
+        </li>
+        <li><a href="https://grow2024.000webhostapp.com/blog">BLOG</a></li>
+        <li><a href="https://grow2024.000webhostapp.com/review">REVIEW</a></li>
+        <li><a href="https://grow2024.000webhostapp.com">CONTACT</a></li>
+    </ul>
+</div></div><br><br>
+<form role="search" id="form">
+    
+    <title>Google Search</title>
+    <body>
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="searchGoogle()"> <a><i class="fa fa-search"></i></a></button>
+    </body>
+  </form>
+  <script>
+    function searchGoogle() {
+            var query = document.getElementById("searchInput").value;
+            var searchUrl = "https://www.google.com/search?q=";
+
+            if (query.toLowerCase().includes(" internship") || query.toLowerCase().includes("course")) {
+                window.open(searchUrl + encodeURIComponent(query), "_blank");
+            } else {
+                alert("Invalid search: Please search for free internships or free courses only.add suffix- internship OR Courses to your searches.EX-_______ internships,_________ Courses");
+            }
+        }
+  </script>
+<br><br>
+<div id="INTERNSHIPS">
+    <ul>
+    <li><a href="#">INTERNSHIPS </a><ul>
+        <li><a href="#">COMPUTER SCIENCE ENGINEERING</a><ul><li><a href="#">WEB DEVELOPMENT</a> <ul>
+            <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+            <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+            <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+            <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+            <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+            <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+            <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+            <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+            <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+            <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+            <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+            <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+        </ul></li> </a></li></li>
+            <li><a href="#">AI / ML</a><ul>
+                <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+            <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+            <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+            <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+            <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+            <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+            <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+            <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+            <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+            <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+            <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+            <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+            </ul></li>
+                <ul>
+                <li><a href="https://internship.aicte-india.org/">AICTE</a></li>
+                
+            </ul></li>
+            <li><a href="#">ANDROID DEVELOPMENT</a> <ul>
+                <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+                <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+                <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+                <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+                <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+                <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+                <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+                <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+                <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+                <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+                <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+            </ul></li></li>
+            <li><a href="#">C++</a> <ul>
+                <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+            <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+            <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+            <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+            <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+            <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+            <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+            <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+            <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+            <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+            <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+            <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+            </ul></li></li>
+            <li><a href="#">PYTHON</a> <ul>
+                <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+                <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+                <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+                <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+                <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+                <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+                <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+                <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+                <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+                <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+                <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+            </ul></li></li>
+            <li><a href="#">DSA</a> <ul>
+                <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+                <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+                <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+                <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+                <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+                <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+                <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+                <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+                <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+                <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+                <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+            </ul></li></li>
+            <li><a href="#">CYBERSECURITY & ETHICAL HACKING</a> <ul>
+                <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+            <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+            <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+            <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+            <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+            <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+            <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+            <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+            <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+            <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+            <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+            <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+            </ul></li></li>
+            <li><a href="#">JAVA DEVELOPMENT</a> <ul>
+                <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+                <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+                <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+                <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+                <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+                <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+                <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+                <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+                <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+                <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+                <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+            </ul></li></li> <li><a href="#">DATA SCIENCE</a> <ul>
+                <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+            <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+            <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+            <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+            <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+            <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+            <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+            <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+            <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+            <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+            <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+            <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+            </ul></li></li></ul>
+            <li><a href="#">INFORMATION TECHNOLOGY</a><ul><li><a href="#">WEB DEVELOPMENT</a> <ul>
+                <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+                <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+                <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+                <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+                <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+                <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+                <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+                <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+                <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+                <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+                <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+            </ul></li> </a></li></li>
+                <li><a href="#">AI / ML</a><ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+                <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+                <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+                <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+                <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+                <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+                <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+                <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+                <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+                <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+                <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+                </ul></li>
+                    <ul>
+                    <li><a href="https://internship.aicte-india.org/">AICTE</a></li>
+                    
+                </ul></li>
+                <li><a href="#">ANDROID DEVELOPMENT</a> <ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                    <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+                    <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+                    <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+                    <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+                    <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+                    <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+                    <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+                    <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+                    <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+                    <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+                    <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+                </ul></li></li>
+                <li><a href="#">C++</a> <ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+                <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+                <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+                <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+                <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+                <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+                <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+                <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+                <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+                <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+                <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+                </ul></li></li>
+                <li><a href="#">PYTHON</a> <ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                    <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+                    <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+                    <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+                    <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+                    <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+                    <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+                    <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+                    <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+                    <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+                    <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+                    <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+                </ul></li></li>
+                <li><a href="#">DSA</a> <ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                    <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+                    <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+                    <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+                    <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+                    <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+                    <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+                    <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+                    <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+                    <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+                    <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+                    <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+                </ul></li></li>
+                <li><a href="#">CYBERSECURITY & ETHICAL HACKING</a> <ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+                <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+                <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+                <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+                <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+                <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+                <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+                <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+                <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+                <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+                <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+                </ul></li></li>
+                <li><a href="#">JAVA DEVELOPMENT</a> <ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                    <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+                    <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+                    <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+                    <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+                    <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+                    <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+                    <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+                    <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+                    <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+                    <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+                    <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+                </ul></li></li> <li><a href="#">DATA SCIENCE</a> <ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+                <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+                <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+                <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+                <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+                <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+                <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+                <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+                <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+                <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+                <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+                </ul></li></li></ul>
+        
+        
+       
+    <li><a href="#">ARTIFICIAL INTELLIGENCE & DATA SCIENCE</a><ul><li><a href="#">WEB DEVELOPMENT</a> <ul>
+        <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+        <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+        <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+        <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+        <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+        <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+        <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+        <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+        <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+        <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+        <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+        <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+    </ul></li> </a></li></li>
+        <li><a href="#">AI / ML</a><ul>
+            <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+        <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+        <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+        <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+        <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+        <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+        <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+        <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+        <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+        <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+        <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+        <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+        </ul></li>
+            <ul>
+            <li><a href="https://internship.aicte-india.org/">AICTE</a></li>
+            
+        </ul></li>
+        <li><a href="#">ANDROID DEVELOPMENT</a> <ul>
+            <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+            <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+            <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+            <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+            <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+            <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+            <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+            <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+            <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+            <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+            <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+            <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+        </ul></li></li>
+        <li><a href="#">C++</a> <ul>
+            <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+        <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+        <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+        <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+        <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+        <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+        <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+        <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+        <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+        <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+        <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+        <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+        </ul></li></li>
+        <li><a href="#">PYTHON</a> <ul>
+            <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+            <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+            <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+            <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+            <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+            <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+            <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+            <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+            <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+            <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+            <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+            <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+        </ul></li></li>
+        <li><a href="#">DSA</a> <ul>
+            <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+            <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+            <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+            <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+            <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+            <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+            <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+            <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+            <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+            <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+            <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+            <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+        </ul></li></li>
+        <li><a href="#">CYBERSECURITY & ETHICAL HACKING</a> <ul>
+            <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+        <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+        <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+        <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+        <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+        <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+        <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+        <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+        <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+        <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+        <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+        <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+        </ul></li></li>
+        <li><a href="#">JAVA DEVELOPMENT</a> <ul>
+            <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+            <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+            <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+            <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+            <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+            <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+            <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+            <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+            <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+            <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+            <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+            <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+        </ul></li></li> <li><a href="#">DATA SCIENCE</a> <ul>
+            <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+        <li><a href="https://technohacks.co.in/#Internships"target="_blank">TECHNOHACKS</a></li>
+        <li><a href="https://internpe.in/#Internships"target="_blank">INTERNPE</a></li>
+        <li><a href="https://internship.codeclause.com/"target="_blank">CODECLAUSE</a></li>
+        <li><a href="https://www.coderscave.in/internships"target="_blank">CODERSCAVE</a></li>
+        <li><a href="https://www.codsoft.in/internships"target="_blank">CODESOFT</a></li>
+        <li><a href="https://bharatintern.live/b/vip/d/b/index.html"target="_blank">BHARAT INTERN</a></li>
+        <li><a href="https://cognifyz.com/internships/"target="_blank">COGNIFYZ</a></li>
+        <li><a href="https://digitalbhem.com/internships/"target="_blank">DIGITAL BHEM</a></li>
+        <li><a href="https://oasisinfobyte.com/#features"target="_blank">OASIS INFOBYTE</a></li>
+        <li><a href="https://octanet.in/projects/"target="_blank">OCTANET</a></li>
+        <li><a href="https://www.emertxe.com/internships/internship-embedded/"target="_blank">EMERTXE</a></li>
+        </ul></li></li>
+
+
+    </ul>
+</li>
+    </li>
+        </li>
+       
+        <li><a href="#">ELECTRICAL ENGINEERING</a>
+            <ul>
+                <li><a href="#">EMBEDDED SYSTEMS</a> <ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+            <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+            <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                   
+                </ul></li></li> 
+                <li><a href="#">PCB-DESIGNING</a>
+                    <ul>
+                        <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                        <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+            <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+            <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINKER NEXT TRAINING</a></li>
+            
+                </ul></li>
+                <li><a href="#">MATLAB</a> <ul>
+                   
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+            <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+            <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">AUTOMATION (ROBOTICS)</a> <ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a>
+                        <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+            <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+            <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li> <ul></ul>
+                </ul><li><a href="#">SIGNAL PROCESSING</a><ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+                    <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+                    <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+                    <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+                    <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINKER NEXT TRAINING</a></li>
+                </ul></li>
+            </ul>
+        </li>
+        <li><a href="#">ELECTRONICS</a>
+            <ul>
+                <li><a href="#">EMBEDDED SYSTEMS</a> <ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+            <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+            <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                   
+                </ul></li></li> 
+                <li><a href="#">PCB-DESIGNING</a>
+                    <ul>
+                        <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                        <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+            <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+            <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINKER NEXT TRAINING</a></li>
+            
+                </ul></li>
+                <li><a href="#">MATLAB</a> <ul>
+                   
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+            <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+            <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">AUTOMATION (ROBOTICS)</a> <ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a>
+                        <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+            <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+            <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li> <ul></ul>
+                </ul><li><a href="#">SIGNAL PROCESSING</a><ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+                    <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+                    <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+                    <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+                    <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINKER NEXT TRAINING</a></li>
+                </ul></li>
+            </ul>
+        </li>
+        <li><a href="#">ELECTRONICS & TELECOMMUNICATION</a>
+            <ul>
+                <li><a href="#">EMBEDDED SYSTEMS</a> <ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+            <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+            <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                   
+                </ul></li></li> 
+                <li><a href="#">PCB-DESIGNING</a>
+                    <ul>
+                        <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                        <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+            <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+            <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINKER NEXT TRAINING</a></li>
+            
+                </ul></li>
+                <li><a href="#">MATLAB</a> <ul>
+                   
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+            <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+            <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">AUTOMATION (ROBOTICS)</a> <ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a>
+                        <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+            <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+            <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li> <ul></ul>
+                </ul><li><a href="#">SIGNAL PROCESSING</a><ul>
+                    <li><a href="https://internship.aicte-india.org/"target="_blank">AICTE-india</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+                    <li><a href="https://codebindtechnologies.com/internship-for-ece-students/"target="_blank">CODE IND TECHNOLOGY</a></li>
+                    <li><a href="https://kaashivinfotech.com/online-internship-for-eee-students/"target="_blank">KASHIV INFOTECH</a></li>
+                    <li><a href="https://www.emertxe.com/internships/"target="_blank">EMERTXE</a></li>
+                    <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINKER NEXT TRAINING</a></li>
+                </ul></li>
+            </ul>
+        </li>
+        <li><a href="#">MECHANICAL ENGINEERING</a><ul><li><a href="#">AUTOCAD</a><ul></li>
+            <li><a href="https://www.kaashivinfotech.com/online-internship-for-mechanical-students/"target="_blank">KASHIV INFOTECH</a></li> 
+            <li><a href="https://elearn.royal-mechanical.com/courses/free-internship-for-mechanical-engineers"target="_blank">E-LEARN LOYAL MECHANICAL</a></li>
+            <li><a href="https://internship.aicte-india.org/internship-details.php?uid=SU5URVJOU0hJUF8xNjU2NTUxNTAxNjJiY2Y4NGQ4NWQxZQ==">AICTE-india</a></li>
+            <li><a href="https://theinternships.in/course/mechanical-internships/"target="_blank">THE INTERNSHIPS</a></li>
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspxhttps://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+            <li><a href="https://codebindtechnologies.com/internship-for-mechanical-students/"target="_blank">CODE BIND TECHNOLOGIES</a></li></ul></li>
+            <li><a href="#">ROBOTICS & AI</a><ul></li>
+                <li><a href="https://www.kaashivinfotech.com/online-internship-for-mechanical-students/"target="_blank">KASHIV INFOTECH</a></li> 
+                <li><a href="https://elearn.royal-mechanical.com/courses/free-internship-for-mechanical-engineers"target="_blank">E-LEARN LOYAL MECHANICAL</a></li>
+                <li><a href="https://internship.aicte-india.org/internship-details.php?uid=SU5URVJOU0hJUF8xNjU2NTUxNTAxNjJiY2Y4NGQ4NWQxZQ==">AICTE-india</a></li>
+                <li><a href="https://theinternships.in/course/mechanical-internships/"target="_blank">THE INTERNSHIPS</a></li>
+                <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspxhttps://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                <li><a href="https://codebindtechnologies.com/internship-for-mechanical-students/"target="_blank">CODE BIND TECHNOLOGIES</a></li></ul>
+            <li><a href="#">CAD</a><ul></li>
+                <li><a href="https://www.kaashivinfotech.com/online-internship-for-mechanical-students/"target="_blank">KASHIV INFOTECH</a></li> 
+                <li><a href="https://elearn.royal-mechanical.com/courses/free-internship-for-mechanical-engineers"target="_blank">E-LEARN LOYAL MECHANICAL</a></li>
+                <li><a href="https://internship.aicte-india.org/internship-details.php?uid=SU5URVJOU0hJUF8xNjU2NTUxNTAxNjJiY2Y4NGQ4NWQxZQ==">AICTE-india</a></li>
+                <li><a href="https://theinternships.in/course/mechanical-internships/"target="_blank">THE INTERNSHIPS</a></li>
+                <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspxhttps://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                <li><a href="https://codebindtechnologies.com/internship-for-mechanical-students/"target="_blank">CODE BIND TECHNOLOGIES</a></li></ul></li>
+            <li><a href="#">CAM</a><ul></li>
+                <li><a href="https://www.kaashivinfotech.com/online-internship-for-mechanical-students/"target="_blank">KASHIV INFOTECH</a></li> 
+                <li><a href="https://elearn.royal-mechanical.com/courses/free-internship-for-mechanical-engineers"target="_blank">E-LEARN LOYAL MECHANICAL</a></li>
+                <li><a href="https://internship.aicte-india.org/internship-details.php?uid=SU5URVJOU0hJUF8xNjU2NTUxNTAxNjJiY2Y4NGQ4NWQxZQ==">AICTE-india</a></li>
+                <li><a href="https://theinternships.in/course/mechanical-internships/"target="_blank">THE INTERNSHIPS</a></li>
+                <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspxhttps://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                <li><a href="https://codebindtechnologies.com/internship-for-mechanical-students/"target="_blank">CODE BIND TECHNOLOGIES</a></li></ul></li></ul>
+
+        <li><a href="#">CIVIL ENGINEERING</a><ul><li><a href="#">3D DESIGNS USING CATIA</a><ul><li><a href="https://www.kaashivinfotech.com/internship-for-civil-students/"target="_blank">KASHIV INFOTECH</a></li>
+
+            <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+            
+            <li><a href="https://istindia.org/find/free-online-internship-for-civil-engineering-students"target="_blank">IST INDIA</a></ul></li>
+            <li><a href="#">3D MODELLING STRUCTURES TRAINING WITH ANSYS</a><ul><li><a href="https://www.kaashivinfotech.com/internship-for-civil-students/"target="_blank">KASHIV INFOTECH</a></li>
+
+                <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                
+                <li><a href="https://istindia.org/find/free-online-internship-for-civil-engineering-students"target="_blank">IST INDIA</a></ul></li>
+            <li><a href="#">DRONE DESIGNING TRAINING / AIR CRAFT DESIGNING</a><ul><li><a href="https://www.kaashivinfotech.com/internship-for-civil-students/"target="_blank">KASHIV INFOTECH</a></li>
+
+                <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                
+                <li><a href="https://istindia.org/find/free-online-internship-for-civil-engineering-students"target="_blank">IST INDIA</a></ul></li>
+            <li><a href="#">ARCHITECT DESIGN WITH AUTOCAD</a><ul><li><a href="https://www.kaashivinfotech.com/internship-for-civil-students/"target="_blank">KASHIV INFOTECH</a></li>
+
+                <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                
+                <li><a href="https://istindia.org/find/free-online-internship-for-civil-engineering-students"target="_blank">IST INDIA</a></ul></li>
+            <li><a href="#">ROBOTICS & AI</a><ul><li><a href="https://www.kaashivinfotech.com/internship-for-civil-students/"target="_blank">KASHIV INFOTECH</a></li>
+
+                <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                
+                <li><a href="https://istindia.org/find/free-online-internship-for-civil-engineering-students"target="_blank">IST INDIA</a></ul></li>
+            <li><a href="#">SOLAR CONSTRUCTIONS</a><ul><li><a href="https://www.kaashivinfotech.com/internship-for-civil-students/"target="_blank">KASHIV INFOTECH</a></li>
+
+                <li><a href="https://www.thinknexttraining.com/free-online-internship-with-certificate.aspx"target="_blank">THINK NEXT TRAINING</a></li>
+                
+                <li><a href="https://istindia.org/find/free-online-internship-for-civil-engineering-students"target="_blank">IST INDIA</a></ul></li></ul>
+        </li></li></li>
+        
+    </ul>
+</li>
+    </li>
+    <li>
+  <li> <a href="#">COURSES</a>
+    <ul>
+        <li><a href="#">COMPUTER SCIENCE ENGINEERING</a><ul><li><a href="https://virtualcyberlabs.com/all-courses/"target="_blank">VIRTUAL CYBER LABS</a></li>
+            <li><a href="https://codered.eccouncil.org/course/a-practical-introduction-to-cloud-computing?logged=true"target="_blank">EC-COUNCIL</a></li>
+            <li><a href="https://www.skillindiadigital.gov.in/courses"target="_blank">SKILL INDIA</a></li>
+            <li><a href="https://www.freecodecamp.org/news/freecodecamp-certifications/"target="_blank">FREECODE CAMP</a></li>
+            <li><a href="https://www.life-global.org/allcourses?page=1"target="_blank">LIFE GLOBAL</a></li>
+            <li><a href="https://alison.com/certificate-courses"target="_blank">ALISON</a></li>
+            <li><a href="https://www.simplilearn.com/skillup-free-online-courses#exploreCoursesSkillup"target="_blank">SIMPLILEARN</a></li>
+            <li><a href="https://www.shiksha.com/online-courses/free-online-courses-certificates"target="_blank">SHIKSHA</a></li>
+            <li><a href="https://www.mygreatlearning.com/academy"target="_blank">GREAT LEARNING</a></li>
+            <li><a href="https://swayam.gov.in/explorer"target="_blank">SWAYAM</a></li>
+            <li><a href="https://www.mindluster.com/online-courses"target="_blank">MINDLUSTER</a></li>
+            <li><a href="https://www.futurelearn.com/info/blog/free-online-courses-with-certifications-september-2020"target="_blank">FUTURE LEARN</a></li>
+            <li><a href="https://archive.nptel.ac.in/course.html"target="_blank">ARCHIVE</a></li>
+            <li><a href="https://www.udemy.com/courses/search/?src=ukw&q=free"target="_blank">UDEMY</a></li>
+            <li><a href="https://intellipaat.com/academy/"target="_blank">INTELLIPAAT</a></li>
+            <li><a href="https://lectera.com/en/category/free-courses"target="_blank">LECTURA</a></li>
+            <li><a href="https://www.scaler.com/topics/courses/"target="_blank">SCALER</a></li>
+            <li><a href="https://www.tcsion.com/iDH/India/Catalog/search_text/free/order_by/popular_down/pageNo/1"target="_blank">TCS ION</a></li>
+            <li><a href="https://www.stpcomputereducation.com/"target="_blank">STP COMPUTER EDUCATION</a></li>
+            <li><a href="https://www.linkedin.com/learning/search?keywords=free%20courses%20with%20certificates"target="_blank">LINKDIN</a></li>
+            <li><a href="https://www.udacity.com/blog/2020/08/the-best-free-online-tech-courses.html"target="_blank">UDACITY</a></li>
+            <li><a href="https://thedigitaladda.com/"target="_blank">THE DIGITAL ADDA</a></li>
+            <li><a href="https://www.skillsiya.com/s/store/courses/Free%20courses"target="_blank">SKILLSIYA</a></li>
+            <li><a href="https://www.startupindia.gov.in/content/sih/en/reources/online-courses.html"target="_blank">STARTUP INDIA</a></li>
+            <li><a href="https://www.educba.com/skillup-101free/"target="_blank">EDUCBA</a></li>
+            <li><a href="https://get-started.opswatacademy.com/introduction-critical-infrastructure-protection"target="_blank">OPSWATACADEMY</a></li>
+            <li><a href="https://infyspringboard.onwingspan.com/web/en/app/search/learning?lang=en&q=free&f=%7B%22contentType%22:%5B%22Course%22%5D%7D"target="_blank">INFY SPRINGBOARD</a></li>
+            <li><a href="https://www.geeksforgeeks.org/free-online-courses-by-geeksforgeeks-learn-new-tech-skills/#courses"target="_blank">GEEKS FOR GEEKS</a></li>
+            <li><a href="https://data-flair.training/"target="_blank">DATA-FLAIR</a></li>
+            <li><a href="https://www.hackerrank.com/skills-verification"target="_blank">HACKER RANK</a></li>
+            <li><a href="https://www.codechef.com/learn"target="_blank">CODE CHEF</a></li>
+            <li><a href="https://kandi.openweaver.com/"target="_blank">KANDI-OPENWEAVER</a></li>
+            <li><a href="https://matlabacademy.mathworks.com/"target="_blank">MATLAB ACADEMY</a></li>
+            <li><a href="https://analytics.google.com/analytics/academy/"target="_blank">ANALYTICS</a></li>
+            <li><a href="https://cognitiveclass.ai/learn">COGNITIVE CLASS</a></li>
+                <li><a href="https://machinelearning.org.in/"target="_blank">MACHINE LEARNING</a></li></ul>
+        
+
+                <li><a href="#">INFORMATION TECHNOLOGY</a><ul><li><a href="https://virtualcyberlabs.com/all-courses/"target="_blank">VIRTUAL CYBER LABS</a></li>
+                    <li><a href="https://codered.eccouncil.org/course/a-practical-introduction-to-cloud-computing?logged=true"target="_blank">EC-COUNCIL</a></li>
+                    <li><a href="https://www.skillindiadigital.gov.in/courses"target="_blank">SKILL INDIA</a></li>
+                    <li><a href="https://www.freecodecamp.org/news/freecodecamp-certifications/"target="_blank">FREECODE CAMP</a></li>
+                    <li><a href="https://www.life-global.org/allcourses?page=1"target="_blank">LIFE GLOBAL</a></li>
+                    <li><a href="https://alison.com/certificate-courses"target="_blank">ALISON</a></li>
+                    <li><a href="https://www.simplilearn.com/skillup-free-online-courses#exploreCoursesSkillup"target="_blank">SIMPLILEARN</a></li>
+                    <li><a href="https://www.shiksha.com/online-courses/free-online-courses-certificates"target="_blank">SHIKSHA</a></li>
+                    <li><a href="https://www.mygreatlearning.com/academy"target="_blank">GREAT LEARNING</a></li>
+                    <li><a href="https://swayam.gov.in/explorer"target="_blank">SWAYAM</a></li>
+                    <li><a href="https://www.mindluster.com/online-courses"target="_blank">MINDLUSTER</a></li>
+                    <li><a href="https://www.futurelearn.com/info/blog/free-online-courses-with-certifications-september-2020"target="_blank">FUTURE LEARN</a></li>
+                    <li><a href="https://archive.nptel.ac.in/course.html"target="_blank">ARCHIVE</a></li>
+                    <li><a href="https://www.udemy.com/courses/search/?src=ukw&q=free"target="_blank">UDEMY</a></li>
+                    <li><a href="https://intellipaat.com/academy/"target="_blank">INTELLIPAAT</a></li>
+                    <li><a href="https://lectera.com/en/category/free-courses"target="_blank">LECTURA</a></li>
+                    <li><a href="https://www.scaler.com/topics/courses/"target="_blank">SCALER</a></li>
+                    <li><a href="https://www.tcsion.com/iDH/India/Catalog/search_text/free/order_by/popular_down/pageNo/1"target="_blank">TCS ION</a></li>
+                    <li><a href="https://www.stpcomputereducation.com/"target="_blank">STP COMPUTER EDUCATION</a></li>
+                    <li><a href="https://www.linkedin.com/learning/search?keywords=free%20courses%20with%20certificates"target="_blank">LINKDIN</a></li>
+                    <li><a href="https://www.udacity.com/blog/2020/08/the-best-free-online-tech-courses.html"target="_blank">UDACITY</a></li>
+                    <li><a href="https://thedigitaladda.com/"target="_blank">THE DIGITAL ADDA</a></li>
+                    <li><a href="https://www.skillsiya.com/s/store/courses/Free%20courses"target="_blank">SKILLSIYA</a></li>
+                    <li><a href="https://www.startupindia.gov.in/content/sih/en/reources/online-courses.html"target="_blank">STARTUP INDIA</a></li>
+                    <li><a href="https://www.educba.com/skillup-101free/"target="_blank">EDUCBA</a></li>
+                    <li><a href="https://get-started.opswatacademy.com/introduction-critical-infrastructure-protection"target="_blank">OPSWATACADEMY</a></li>
+                    <li><a href="https://infyspringboard.onwingspan.com/web/en/app/search/learning?lang=en&q=free&f=%7B%22contentType%22:%5B%22Course%22%5D%7D"target="_blank">INFY SPRINGBOARD</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/free-online-courses-by-geeksforgeeks-learn-new-tech-skills/#courses"target="_blank">GEEKS FOR GEEKS</a></li>
+                    <li><a href="https://data-flair.training/"target="_blank">DATA-FLAIR</a></li>
+                    <li><a href="https://www.hackerrank.com/skills-verification"target="_blank">HACKER RANK</a></li>
+                    <li><a href="https://www.codechef.com/learn"target="_blank">CODE CHEF</a></li>
+                    <li><a href="https://kandi.openweaver.com/"target="_blank">KANDI-OPENWEAVER</a></li>
+                    <li><a href="https://matlabacademy.mathworks.com/"target="_blank">MATLAB ACADEMY</a></li>
+                    <li><a href="https://analytics.google.com/analytics/academy/"target="_blank">ANALYTICS</a></li>
+                    <li><a href="https://cognitiveclass.ai/learn">COGNITIVE CLASS</a></li>
+                        <li><a href="https://machinelearning.org.in/"target="_blank">MACHINE LEARNING</a></li></ul>
+        
+                        <li><a href="#">ARTIFICIAL INTELLIGENCE & DATA SCIENCE</a><ul><li><a href="https://virtualcyberlabs.com/all-courses/"target="_blank">VIRTUAL CYBER LABS</a></li>
+                            <li><a href="https://codered.eccouncil.org/course/a-practical-introduction-to-cloud-computing?logged=true"target="_blank">EC-COUNCIL</a></li>
+                            <li><a href="https://www.skillindiadigital.gov.in/courses"target="_blank">SKILL INDIA</a></li>
+                            <li><a href="https://www.freecodecamp.org/news/freecodecamp-certifications/"target="_blank">FREECODE CAMP</a></li>
+                            <li><a href="https://www.life-global.org/allcourses?page=1"target="_blank">LIFE GLOBAL</a></li>
+                            <li><a href="https://alison.com/certificate-courses"target="_blank">ALISON</a></li>
+                            <li><a href="https://www.simplilearn.com/skillup-free-online-courses#exploreCoursesSkillup"target="_blank">SIMPLILEARN</a></li>
+                            <li><a href="https://www.shiksha.com/online-courses/free-online-courses-certificates"target="_blank">SHIKSHA</a></li>
+                            <li><a href="https://www.mygreatlearning.com/academy"target="_blank">GREAT LEARNING</a></li>
+                            <li><a href="https://swayam.gov.in/explorer"target="_blank">SWAYAM</a></li>
+                            <li><a href="https://www.mindluster.com/online-courses"target="_blank">MINDLUSTER</a></li>
+                            <li><a href="https://www.futurelearn.com/info/blog/free-online-courses-with-certifications-september-2020"target="_blank">FUTURE LEARN</a></li>
+                            <li><a href="https://archive.nptel.ac.in/course.html"target="_blank">ARCHIVE</a></li>
+                            <li><a href="https://www.udemy.com/courses/search/?src=ukw&q=free"target="_blank">UDEMY</a></li>
+                            <li><a href="https://intellipaat.com/academy/"target="_blank">INTELLIPAAT</a></li>
+                            <li><a href="https://lectera.com/en/category/free-courses"target="_blank">LECTURA</a></li>
+                            <li><a href="https://www.scaler.com/topics/courses/"target="_blank">SCALER</a></li>
+                            <li><a href="https://www.tcsion.com/iDH/India/Catalog/search_text/free/order_by/popular_down/pageNo/1"target="_blank">TCS ION</a></li>
+                            <li><a href="https://www.stpcomputereducation.com/"target="_blank">STP COMPUTER EDUCATION</a></li>
+                            <li><a href="https://www.linkedin.com/learning/search?keywords=free%20courses%20with%20certificates"target="_blank">LINKDIN</a></li>
+                            <li><a href="https://www.udacity.com/blog/2020/08/the-best-free-online-tech-courses.html"target="_blank">UDACITY</a></li>
+                            <li><a href="https://thedigitaladda.com/"target="_blank">THE DIGITAL ADDA</a></li>
+                            <li><a href="https://www.skillsiya.com/s/store/courses/Free%20courses"target="_blank">SKILLSIYA</a></li>
+                            <li><a href="https://www.startupindia.gov.in/content/sih/en/reources/online-courses.html"target="_blank">STARTUP INDIA</a></li>
+                            <li><a href="https://www.educba.com/skillup-101free/"target="_blank">EDUCBA</a></li>
+                            <li><a href="https://get-started.opswatacademy.com/introduction-critical-infrastructure-protection"target="_blank">OPSWATACADEMY</a></li>
+                            <li><a href="https://infyspringboard.onwingspan.com/web/en/app/search/learning?lang=en&q=free&f=%7B%22contentType%22:%5B%22Course%22%5D%7D"target="_blank">INFY SPRINGBOARD</a></li>
+                            <li><a href="https://www.geeksforgeeks.org/free-online-courses-by-geeksforgeeks-learn-new-tech-skills/#courses"target="_blank">GEEKS FOR GEEKS</a></li>
+                            <li><a href="https://data-flair.training/"target="_blank">DATA-FLAIR</a></li>
+                            <li><a href="https://www.hackerrank.com/skills-verification"target="_blank">HACKER RANK</a></li>
+                            <li><a href="https://www.codechef.com/learn"target="_blank">CODE CHEF</a></li>
+                            <li><a href="https://kandi.openweaver.com/"target="_blank">KANDI-OPENWEAVER</a></li>
+                            <li><a href="https://matlabacademy.mathworks.com/"target="_blank">MATLAB ACADEMY</a></li>
+                            <li><a href="https://analytics.google.com/analytics/academy/"target="_blank">ANALYTICS</a></li>
+                            <li><a href="https://cognitiveclass.ai/learn">COGNITIVE CLASS</a></li>
+                                <li><a href="https://machinelearning.org.in/"target="_blank">MACHINE LEARNING</a></li></ul>
+                        
+        <li><a href="#">ELECTRICAL ENGINEERING</a><ul>
+            <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://alison.com/tag/electrical-engineering"target="_blank">ALISON</a></li>
+            <li><a href="https://gatetrust.org/courses.php"target="_blank">GATE TRUST</a></li>
+            
+            </ul> 
+        </li>
+        <li><a href="#">ELECTRONICS</a><ul>
+            <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://alison.com/tag/electrical-engineering"target="_blank">ALISON</a></li>
+            <li><a href="https://gatetrust.org/courses.php"target="_blank">GATE TRUST</a></li>
+            
+            </ul>
+        </li>
+        <li><a href="#">ELECTRONICS & TELECOMMUNICATION</a><ul>
+            <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+            <li><a href="https://alison.com/tag/electrical-engineering"target="_blank">ALISON</a></li>
+            <li><a href="https://gatetrust.org/courses.php"target="_blank">GATE TRUST</a></li>
+            
+            </ul>
+        </li>
+        <li><a href="#">MECANICAL ENGINEERING</a><ul><li><a href="https://elearn.royal-mechanical.com/courses/free-internship-for-mechanical-engineers"target="_blank">E-LEARN LOYAL MECHANICAL</a></li>
+            <li><a href="https://easyshiksha.com/online_courses/course/search/subcategory-mechanical-engineering"target="_blank">EASY SHIKSHA</a></li>
+            
+            <li><a href="https://skyyrider.com/online-free-course"target="_blank">SKY RIDER</a></ul>
+        </li></li>
+        <li><a href="#">CIVIL ENGINEERING</a><ul><li><a href="https://gatetrust.org/courses.php "target="_blank">GATE TRUST</a></li>
+            </ul>
+        </li></li>
+        
+    </ul>
+</li></ul> 
+        
+        <ul>
+            <li><a href="#">SOFT SKIILS</a><ul>
+                <li><a href="#">LEADERSHIP  </a> <ul>
+                    <li><a href="https://www.coursera.org/specializations/leading-teams?utm_medium=institutions&utm_source=umich&utm_campaign=adwords-leading-people-and-teams-specialization&utm_term=coursera%20leadership%20skills&gad_source=1&gclid=  ">COURSERA</a></li>
+                    <li><a href="https://www.life-global.org/course/13-effective-leadership">LIFE GLOBAL</a></li>
+                    <li><a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/leadership-and-management"target="_blank">GREAT LEARNING</a></li>
+                    <li><a href="https://learn.saylor.org/?redirect=0 "target="_blank">SAYLOR</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+                    
+                </ul></li>
+                </li>
+                <li><a href="#">EFFECTIVE PRESENTATIONS</a>
+                    <ul>
+                        <li><a href="https://www.life-global.org/allcourses?page=1 "target="_blank">LIFE GLOBAL</a></li>
+                        <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a>
+                            
+                    </ul>
+                </li>
+                <li><a href="#">BUSINESS-COMMUNICATIONS</a> <ul>
+                    <li><a href="https://www.life-global.org/allcourses?page=1 "target="_blank">LIFE GLOBAL</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">BUSINESS-EMAIL</a><ul>
+                    <li><a href="https://www.life-global.org/allcourses?page=1 "target="_blank">LIFE GLOBAL</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">STARTING A SMALL BUSINESS</a><ul>
+                    <li><a href="https://www.life-global.org/allcourses?page=1 "target="_blank">LIFE GLOBAL</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">SOCIAL-ENTREPRENEURSHIP</a><ul>
+                    <li><a href="https://www.life-global.org/allcourses?page=1 "target="_blank">LIFE GLOBAL</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">DESIGN-THINKING</a><ul>
+                    <li><a href="https://www.life-global.org/allcourses?page=1 "target="_blank">LIFE GLOBAL</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">PRESENTING-DATA</a><ul>
+                    <li><a href="https://www.life-global.org/allcourses?page=1 "target="_blank">LIFE GLOBAL</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">DIGITAL-BUSINESS SKILLS</a><ul>
+                    <li><a href="https://www.life-global.org/allcourses?page=1 "target="_blank">LIFE GLOBAL</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">CAREER-DEVELOPMENT</a><ul>
+                    <li><a href="https://www.life-global.org/allcourses?page=1 "target="_blank">LIFE GLOBAL</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">ENGLISH SPEAKING</a><ul>
+                    <li><a href="https://learn.saylor.org/course/index.php?categoryid=29&utm_source=google&utm_medium=keyword&utm_campaign=google_keyword_ad_esl&gclid=CjwKCAiAibeuBhAAEiwAiXBoJOgx4UteH4jQtK5C4AKz0RpTgbeVmbFYq48o99L6T5-Gx9A4A7cuahoCBEsQAvD_BwE"target="_blank">SAYLOR</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">ENTREPRENEURSHIP AND BUSINESS PLANNING</a><ul>
+                    <li><a href="https://learn.saylor.org/course/index.php?categoryid=29&utm_source=google&utm_medium=keyword&utm_campaign=google_keyword_ad_esl&gclid=CjwKCAiAibeuBhAAEiwAiXBoJOgx4UteH4jQtK5C4AKz0RpTgbeVmbFYq48o99L6T5-Gx9A4A7cuahoCBEsQAvD_BwE"target="_blank">SAYLOR</a></li>
+                    
+                    
+                </ul></li></li>
+                <li><a href="#">MARKETING</a><ul>
+                    <li><a href="https://learn.saylor.org/course/index.php?categoryid=29&utm_source=google&utm_medium=keyword&utm_campaign=google_keyword_ad_esl&gclid=CjwKCAiAibeuBhAAEiwAiXBoJOgx4UteH4jQtK5C4AKz0RpTgbeVmbFYq48o99L6T5-Gx9A4A7cuahoCBEsQAvD_BwE"target="_blank">SAYLOR</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">PROJECT MANAGEMENT</a><ul>
+                    <li><a href="https://learn.saylor.org/course/index.php?categoryid=29&utm_source=google&utm_medium=keyword&utm_campaign=google_keyword_ad_esl&gclid=CjwKCAiAibeuBhAAEiwAiXBoJOgx4UteH4jQtK5C4AKz0RpTgbeVmbFYq48o99L6T5-Gx9A4A7cuahoCBEsQAvD_BwE"target="_blank">SAYLOR</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">DATA-VISUALIZATION</a><ul>
+                    <li><a href="https://www.udemy.com/topic/data-visualization/free/ "target="_blank">UDEMY</a></li>
+                    <li><a href="https://www.mygreatlearning.com/data-visualization/free-courses"target="_blank">GREAT LEARNING</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">EMAIL MARKETING</a><ul>
+                    <li><a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/email-marketing"target="_blank">GREAT LEARNING</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">DIGITAL MARKETING</a><ul>
+                    <li><a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/digital-marketing-framework"target="_blank">GREAT LEARNING</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">INTERVIEW SKILLS</a><ul>
+                    <li><a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/crash-course-on-soft-skills-for-interviews"target="_blank">GREAT LEARNING</a></li>
+                    <li><a href="https://learn.saylor.org/course/view.php?id=61"target="_blank">SAYLOR</a></li>
+                    
+                </ul></li></li>
+                <li><a href="#">COMMUNICATION PRINCIPLES</a><ul>
+                    <li><a href="https://learn.saylor.org/course/view.php?id=5"target="_blank">SAYLOR</a></li>
+                    <li><a href="https://easyshiksha.com/online_courses/internship"target="_blank">EASY SHIKSHA</a></li>
+                    
+                </ul></li></li>
+                
+            </ul>
+        </li>
+
+                <li><a href="#">OTHER</a><ul>
+                    <li><a href="#">QUIZZES</a><ul>
+                        <li><a href=" https://quiz.mygov.in/"target="_blank">MY GOV</a></li></ul></li>
+                <li><a href="#">OTHER COURSES</a><ul>
+                    <li><a href="https://www.skillindiadigital.gov.in/courses"target="_blank">SKILL INDIA</a></li>
+                    <li><a href="https://swayam.gov.in/explorer">SWAYAM</a></li>
+                    <li><a href=" https://www.shiksha.com/online-courses/government-certification"target="_blank">SHIKSHA</a></li>
+                    <li><a href="https://www.careers360.com/courses-certifications/articles/online-top-government-free-online-courses-with-certificates-for-career-advancement"target="_blank">CAREER 360</a></li>
+                    <li><a href="https://www.getmyuni.com/articles/free-online-government-certification-courses"target="_blank">GETMYUNI</a></li>
+                    <li><a href="https://free.aicte-india.org/"target="_blank">AICTE</a></li>
+                    <li><a href="https://ishiksha.net/free-online-courses-with-certificates-in-india-by-government/"target="_blank">I-SHIKSHA</a></ul></li>
+                    
+                    <li><a href="#">E-BOOKS</a><ul><li><a href="https://www.freebookcentre.net/CompuScience/compscCategory.html"target="_blank">FREE BOOK CENTER</a></li><li><a href="https://www.e-booksdirectory.com/">E-BOOKDIRECTORY</a></li>
+                        <li><a href="https://www.free-ebooks.net/search/Civil+engineering+#gs.8jpxka"target="_blank">FREE-EBOOKS</a></li>
+                        <li><a href="https://freecomputerbooks.com/The-Linux-Programming-Interface.html"target="_blank">FREE COMPUTER BOOKS</a></li>
+                        <li><a href="https://computingsavvy.com/books/"target="_blank">COMPUTINGSAVVY</a></li>
+                        <li><a href="https://www.infobooks.org/free-pdf-books/computers/"target="_blank">INFOBOOKS</a></li>
+                        <li><a href="https://blog.boot.dev/computer-science/computer-science-books/"target="_blank">COMPUTER-SCIENCE BOOKS</a></li>
+                        <li><a href="https://adgitmdelhi.ac.in/computer-science-e-books/"target="_blank">ADGITMDILHI</a></li><li><a href="#">QUIZZES</a></li>
+
+                        <li><a href="https://openstax.org/subjects/computer-science"target="_blank">OPENSTAX</a></li>
+                        <li><a href=" http://worldwideuniversity.org/library/bookboon/soft-skills.pdf"target="_blank">WORLDWIDEUNIVERSITY</a></li>
+                        <li><a href="https://ncert.nic.in/textbook/pdf/kect108.pdf"target="_blank">NCERT</a></li>
+                        <li><a href="http://www.tubebooks.org/Books/PrinciplesOfElectronics.pdf"target="_blank">TUBEBOOKS</a></li>
+                        <li><a href="https://www.researchgate.net/profile/Dk-Kaushik/publication/264005057_Analog_Electronics/links/53fc6fde0cf2dca8ffff1f51/Analog-Electronics.pdf"target="_blank">REASEARCHGATE</a></li>
+
+                        <li><a href="file:///C:/Users/admin/Downloads/Electronics_-_Circuits_and_Systems_4th_Edition-1.pdf"target="_blank">CIRCUITS & SYSTEMS</a></li>
+                        <li><a href="file:///C:/Users/admin/Downloads/TAB_Electronics_Guide_to_Understanding_Electricity_and_Electronics_0071360573.pdf"target="_blank">ELECTRONICS</a></li>
+
+                        <li><a href="file:///C:/Users/admin/Downloads/5_6087155203277062638.pdf"target="_blank">POWER SYSTEMS</a></li>
+                        <li><a href="https://easyengineering.net/engineeringmechanicsbooks/"target="_blank">EASY ENGINEERING</a></li>
+                        <li><a href="https://www.academia.edu/40553619/Basic_Mechanical_Engineering"target="_blank">ACADEMIA</a></li>
+                        <li><a href="https://books.google.co.in/books/about/Theory_of_Machines.html?id=1WDgwAEACAAJ&redir_esc=y"target="_blank">THEORY OF MACHINES</a></li>
+
+                        <li><a href="https://eclass.uniwa.gr/modules/document/index.php?course=EEE265&download=/6218412aGLbn/5e6db8cd5KNP.pdf"target="_blank">E-CLASS UNIWA</a></li>
+                        <li><a href="https://www.technicalbookspdf.com/"target="_blank">TECHNICAL BOOKS</a></li>
+                        <li><a href="https://learnengineering.in/"target="_blank">LEARNENGINEERING</a></li>
+                        <li><a href="https://civilpracticalknowledge.com/is-code-books-used-in-civil-engineering-with-pdf-download/"target="_blank">CIVIL PRACTICAL KNOWLEDGE</a></li>
+                        <li><a href="https://www.infobooks.org/free-pdf-books/#Engineering%20Books"target="_blank">INFOBOOKS</a>
+                       </ul></li>
+                
+              <script> 
+                    
+const token = localStorage.getItem('key'); 
+if (!token) { 
+    window.location.href = 'login.html'; 
+} 
+
+const button = document.getElementById('logout'); 
+button.addEventListener('click', () => { 
+    localStorage.removeItem('key'); 
+    window.location.href = 'https://grow2024.000webhostapp.com/'; 
+
+    
+}); 
+
+
+var decrypted = CryptoJS.AES.decrypt(token, 'key'); 
+
+console.log(decrypted.toString(CryptoJS.enc.Utf8)); 
+
+
+
+                </script>
+                
+</body>
+
+
+</html>
